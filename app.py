@@ -5,7 +5,7 @@ def get_keys(path):
     with open(path) as f:
         return json.load(f)
 keys = get_keys("./apikey.json")
-API_Key = keys['api_key']
+api_key = keys['api_key']
 
 
 def getStockPrice(stock, api_key):
